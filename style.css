@@ -33,7 +33,7 @@ body {
 .header-left-part .natalie-title {
     margin: 0;
     font-size: 40px;
-    color: #333; /* Adjust the color as needed */
+    color: #edb69d;
 }
 
 .header-left-part .Natalie-desc {
@@ -45,7 +45,7 @@ body {
 .header-right-part .topnav {
     overflow: hidden;
     padding-bottom: 15px;
-    border-bottom: 2px solid palevioletred;
+    border-bottom: 2px solid #edb69d;
 }
 
 .topnav a {
@@ -74,3 +74,41 @@ body {
 .header-right-part .topnav a:hover {
     color: #66c2ff; /* Hover color, adjust as needed */
 }
+
+.cards{
+    
+}
+
+.card1{
+    background-color: #ffeeea;
+    display: flex;
+}
+
+.card1 .card1-left-part{
+    width: 60%;
+}
+
+.card1 .card1-right-part{
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.card1-right-part h1{
+    font-size: xx-large;
+    color: #559292;
+}
+
+.card1-right-part button{
+    width: 140px;
+    height: 40px;
+    color:white;
+    background-color: #559292;
+}
+
+#meditating{
+    border: 10px white;
+    /* margin-top: 50px; */
+}
+
