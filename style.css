@@ -8,11 +8,12 @@ body {
     margin: 0;
 }
 
+/* --------------------------header start --------------------------------------- */
 .header {
     /* width: 100%; */
     /* height: 25%; */
     background-color: #ffffff;
-    display : flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -39,7 +40,8 @@ body {
 .header-left-part .Natalie-desc {
     margin: 5px 0 0;
     font-size: 15px;
-    color: #555; /* Adjust the color as needed */
+    color: #555;
+    /* Adjust the color as needed */
 }
 
 .header-right-part .topnav {
@@ -51,7 +53,7 @@ body {
 .topnav a {
     padding: 10px;
     text-decoration: none;
-    color: #333; 
+    color: #333;
     margin: 0 10px;
     font-weight: bold;
     font-size: large;
@@ -61,54 +63,75 @@ body {
 /* Style for Font Awesome icons */
 .header-right-part .topnav a i {
     margin-left: 15px;
-    font-size:20px;
+    font-size: 20px;
 }
 
-.header-right-part .icons{
-    margin-top:15px;
+.header-right-part .icons {
+    margin-top: 15px;
     margin-left: 300px;
     color: black;
     font-size: x-large;
 }
 
 .header-right-part .topnav a:hover {
-    color: #66c2ff; /* Hover color, adjust as needed */
+    color: #66c2ff;
+    /* Hover color, adjust as needed */
 }
 
-.cards{
-    
-}
+/* --------------------------------header end--------------------------------- */
 
-.card1{
+
+/* ---------------------------------- Cards -------------------------------- */
+.cards {}
+
+.card1 {
     background-color: #ffeeea;
     display: flex;
+    position: relative;
 }
 
-.card1 .card1-left-part{
+.card1 .card1-left-part {
     width: 60%;
+    position: relative;
+    overflow: visible;
 }
 
-.card1 .card1-right-part{
+.card1 .card1-right-part {
     width: 30%;
     align-items: center;
     justify-content: center;
     margin-top: 90px;
 }
 
-.card1-right-part h1{
+.card1-right-part h1 {
     font-size: xx-large;
     color: #559292;
 }
 
-.card1-right-part button{
+.card1-right-part button {
     width: 140px;
     height: 40px;
-    color:white;
+    color: white;
     background-color: #559292;
 }
 
-#meditating{
-    border: 10px white;
-    /* margin-top: 50px; */
+.card1-left-part .meditate {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 5;
+    border: 10px solid white;
+    transform: translate(-8%, -5%);
+}
+
+.card1-left-part .square {
+    position: absolute;
+    /* top: -5%; */
+    /* left: -5%; */
+    transform: translate(-10%, -10%);
+    z-index: -5;
+    height: 40%;
+    width: 40%;
+    background-color: #559292;
 }
 
