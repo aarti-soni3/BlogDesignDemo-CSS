@@ -26,28 +26,22 @@ body {
     text-align: center;
 }
 
-/* .header-right-part::before {
-    content: "";
-    clear: both;
-} */
-
 .header-left-part .natalie-title {
     margin: 0;
     font-size: 40px;
-    color: #edb69d;
+    color: #f6b199;
 }
 
 .header-left-part .Natalie-desc {
     margin: 5px 0 0;
     font-size: 15px;
     color: #555;
-    /* Adjust the color as needed */
 }
 
 .header-right-part .topnav {
     overflow: hidden;
     padding-bottom: 15px;
-    border-bottom: 2px solid #edb69d;
+    border-bottom: 2px solid #fabeaa;
 }
 
 .topnav a {
@@ -60,7 +54,6 @@ body {
 }
 
 
-/* Style for Font Awesome icons */
 .header-right-part .topnav a i {
     margin-left: 15px;
     font-size: 20px;
@@ -75,17 +68,15 @@ body {
 
 .header-right-part .topnav a:hover {
     color: #66c2ff;
-    /* Hover color, adjust as needed */
 }
 
 /* --------------------------------header end--------------------------------- */
 
 
-/* ---------------------------------- Cards -------------------------------- */
-.cards {}
+/* ---------------------------------- Card 1 start -------------------------------- */
 
 .card1 {
-    background-color: #ffeeea;
+    background-color: #fabeaa;
     display: flex;
     position: relative;
 }
@@ -113,25 +104,154 @@ body {
     height: 40px;
     color: white;
     background-color: #559292;
+    border: none;
+    font-size: medium;
+}
+
+.card1-left-part .plant {
+    display: flex;
+    position: relative;
+    z-index: 1;
 }
 
 .card1-left-part .meditate {
     position: absolute;
     top: 20%;
     left: 20%;
-    z-index: 5;
+    z-index: 2;
     border: 10px solid white;
     transform: translate(-8%, -5%);
 }
 
-.card1-left-part .square {
+.card1-left-part .square1 {
+    display: flex;
     position: absolute;
     /* top: -5%; */
     /* left: -5%; */
-    transform: translate(-10%, -10%);
-    z-index: -5;
-    height: 40%;
+    transform: translate(56%, -149%);
+    z-index: 0;
+    height: 60%;
     width: 40%;
     background-color: #559292;
 }
 
+/* -------------------------------- card 1 end ---------------------------------- */
+
+/* --------------------------------- card 2 start --------------------------------- */
+
+.card2 {
+    background-color: #ffffff;
+    display: flex;
+    position: relative;
+    height: 580px;
+}
+
+.card2 .card2-right-part {
+    width: 60%;
+    position: relative;
+    overflow: visible;
+}
+
+.card2 .card2-left-part {
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    margin: 170px 0px 0px 180px;
+
+}
+
+.card2-left-part h1 {
+    font-size: xx-large;
+    color: #559292;
+}
+
+.card2-left-part button {
+    width: 140px;
+    height: 40px;
+    color: white;
+    background-color: #559292;
+    border: none;
+    font-size: medium;
+}
+
+.card2-right-part .girlface {
+    display: flex;
+    position: relative;
+    top: -8%;
+    /* padding-left: 50px; */
+    transform: translate(100%, 50%);
+    width: 300px;
+    height: 380px;
+    border: 7px solid white;
+    z-index: 1;
+}
+
+.card2-right-part .square2 {
+    position: absolute;
+    /* display: flex; */
+    width: 33%;
+    height: 65%;
+    transform: translate(118%, -73%);
+    background-color: #fabeaa;
+    z-index: 0;
+}
+
+/* ------------------------- card 2 end ----------------------------------------- */
+
+/* -------------------------- card 3 start ---------------------------------- */
+
+.card3 {
+    position: relative;
+    display: block;
+    background-color: #559292;
+    color: white;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 75px;
+    text-align: center;
+    /* word-wrap: break-word; */
+}
+
+.card3 .para{
+    margin-top: 30px;
+    margin-left: 300px;
+    width: 60%;
+    text-align: center;
+}
+
+.card3 h1{
+    font-style: oblique;
+}
+
+.card3 p{
+    font-size: large;
+}
+
+.card3 .title{
+    font-size: large;
+    text-transform:uppercase;
+}
+
+/* ------------------------------- card 3 end ------------------------------ */
+
+/* ------------------------------- card 4 start --------------------------- */
+
+
+.card4 {
+    background-color: #ffffff;
+    display: flex;
+    position: relative;
+    height: 580px;
+}
+
+.card4 .card4-left-part{
+    width: 50%;
+    
+
+}
+
+d4 .card4-right-part{
+    width: 50%;
+    
+}
