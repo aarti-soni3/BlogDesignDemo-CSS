@@ -1,139 +1,128 @@
-* {
-    box-sizing: border-box;
-}
+.sticky + .content {
+    padding-top: 102px;
+  }
 
-body {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: white;
-    margin: 0;
-}
-
-/* TODO: make sticky header */
-/* --------------------------header start --------------------------------------- */
-.header {
-    /* width: 100%; */
-    /* height: 25%; */
-    background-color: #ffffff;
-    display: flex;
-    position: -webkit-sticky;
-    top: 0px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.header-left-part {
-    width: 25%;
-    /* height: auto; */
-    /* float: left; */
-    text-align: center;
-}
-
-.header-left-part .natalie-title {
-    margin: 0;
-    font-size: 40px;
-    color: #f6b199;
-}
-
-.header-left-part .Natalie-desc {
-    margin: 5px 0 0;
-    font-size: 15px;
-    color: #555;
-}
-
-.header-right-part .topnav {
-    overflow: hidden;
-    padding-bottom: 15px;
-    border-bottom: 2px solid #fabeaa;
-}
-
-.topnav a {
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-    margin: 0 10px;
-    font-weight: bold;
-    font-size: large;
-}
-
-
-.header-right-part .topnav a i {
-    margin-left: 15px;
-    font-size: 20px;
-}
-
-.header-right-part .icons {
-    margin-top: 15px;
-    margin-left: 300px;
-    color: black;
-    font-size: x-large;
-}
-
-.header-right-part .topnav a:hover {
-    color: #66c2ff;
-}
-
-/* --------------------------------header end--------------------------------- */
-
-
-/* ---------------------------------- Card 1 start -------------------------------- */
-
-.card1 {
-    background-color: #fabeaa;
+.cards {
     display: flex;
     position: relative;
+    height: 580px;
 }
 
-.card1 .card1-left-part {
+.cards-img-part {
     width: 60%;
     position: relative;
     overflow: visible;
 }
 
-.card1 .card1-right-part {
+.cards-desc-part {
     width: 30%;
     align-items: center;
     justify-content: center;
-    margin-top: 90px;
 }
 
-.card1-right-part h1 {
+.cards-desc-part h1 {
     font-size: xx-large;
     color: #559292;
 }
 
-.card1-right-part button {
+button {
     width: 160px;
     height: 40px;
     color: white;
-    background-color: #559292;
     border: none;
     font-size: medium;
     margin-top: 20px;
+    text-transform: uppercase;
 }
 
-.card1-left-part .plant {
+.green-button {
+    background-color: #559292;
+}
+
+.orange-button {
+    background-color: #eab168;
+}
+
+.shape {
+    display: flex;
+    position: absolute;
+    z-index: 0;
+}
+
+.title-part {
+    position: absolute;
+    background-color: #f7b198;
+    top: 140px;
+    width: 58%;
+    height: 22%;
+    z-index: 2;
+}
+
+.title-part[data-position="left"] {
+    left: 450px;
+}
+
+.title-part[data-position="right"] {
+    right: 450px;
+}
+
+.cards-desc-part>p[data-position="left"] {
+    left: -125px;
+}
+
+.cards-desc-part>p {
+    width: 25rem;
+    position: relative;
+}
+
+.title-part p {
+    padding-top: 15px;
+    text-transform: uppercase;
+    padding-left: 140px;
+    color: #4e3f34;
+}
+
+.title-part h2 {
+    position: relative;
+    color: white;
+    top: -15%;
+    padding-left: 140px;
+    font-style: oblique;
+    font-size: xx-large;
+}
+
+
+/* ---------------------------------- Card 1 start -------------------------------- */
+.card1 {
+    background-color: #fabeaa;
+}
+
+.card1 .cards-desc-part {
+    margin-top: 90px;
+}
+
+.cards-img-part .plant {
     display: flex;
     position: relative;
     z-index: 1;
+    height: 100%;
+    width: 50%;
 }
 
-.card1-left-part .meditate {
+.cards-img-part .meditate {
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 20%;
     z-index: 2;
     border: 10px solid white;
     transform: translate(-8%, -5%);
 }
 
-.card1-left-part .square1 {
-    display: flex;
-    position: absolute;
+.cards-img-part .square1 {
+
     /* top: -5%; */
     /* left: -5%; */
-    transform: translate(56%, -149%);
-    z-index: 0;
+    transform: translate(58%, -132%);
     height: 60%;
     width: 40%;
     background-color: #559292;
@@ -145,41 +134,19 @@ body {
 
 .card2 {
     background-color: #ffffff;
-    display: flex;
-    position: relative;
-    height: 580px;
 }
 
-.card2 .card2-right-part {
-    width: 60%;
-    position: relative;
-    overflow: visible;
-}
-
-.card2 .card2-left-part {
-    width: 30%;
-    align-items: center;
-    justify-content: center;
+.card2 .cards-desc-part {
     margin: 170px 0px 0px 180px;
 
 }
 
-.card2-left-part h1 {
+.cards-desc-part h1 {
     font-size: xx-large;
     color: #559292;
 }
 
-.card2-left-part button {
-    width: 160px;
-    height: 40px;
-    color: white;
-    background-color: #559292;
-    border: none;
-    font-size: medium;
-    margin-top: 20px;
-}
-
-.card2-right-part .girlface {
+.cards-img-part .girlface {
     display: flex;
     position: relative;
     top: -8%;
@@ -191,19 +158,16 @@ body {
     z-index: 1;
 }
 
-.card2-right-part .square2 {
-    position: absolute;
-    /* display: flex; */
-    width: 33%;
+.cards-img-part .square2 {
+    width: 34%;
     height: 65%;
-    transform: translate(118%, -73%);
+    transform: translate(115%, -73%);
     background-color: #fabeaa;
-    z-index: 0;
 }
 
 /* ------------------------- card 2 end ----------------------------------------- */
 
-/* -------------------------- card 3 start ---------------------------------- */
+/* -------------------------- card 3 quote start ---------------------------------- */
 
 .card3 {
     position: relative;
@@ -246,38 +210,23 @@ body {
 .card4 {
     padding-top: 120px;
     background-color: #ffffff;
-    display: flex;
-    position: relative;
-    height: 650px;
+    /* height: 650px; */
 }
 
-.card4 .card4-left-part {
-    width: 40%;
+.card4 .cards-img-part {
+    width: 30%;
     background-color: #fabeaa;
 }
 
-.card4 .card4-right-part {
-    width: 60%;
+.card4 .cards-desc-part {
     background-color: white;
-    align-items: center;
-    justify-content: center;
     margin: 170px 0px 0px 300px;
     padding-right: 350px;
 }
 
-.card4-right-part button {
-    color: white;
-    background-color: #eab168;
-    text-transform: uppercase;
-    border: none;
-    width: 160px;
-    height: 40px;
-    margin-top: 20px;
-}
-
-.card4-left-part .coffee {
+.cards-img-part .coffee {
     position: absolute;
-    top: 60px;
+    top: -100px;
     left: 160px;
     border: 8px solid white;
     width: 420px;
@@ -285,41 +234,13 @@ body {
     z-index: 1;
 }
 
-.card4-right-part .title {
-    position: absolute;
-    top: 140px;
-    left: 450px;
-    /* left: 420px; */
-    background-color: #f7b198;
-    width: 58%;
-    height: 18%;
-    z-index: 1;
-}
-
-.card4-right-part .title p {
-    padding-top: 15px;
-    text-transform: uppercase;
-    padding-left: 140px;
-    color: #4e3f34;
-}
-
-.card4-right-part .title h2 {
-    position: relative;
-    color: white;
-    top: -10%;
-    padding-left: 140px;
-    font-style: oblique;
-    font-size: xx-large;
-}
-
-.card4-left-part .square3 {
-    position: absolute;
-    top: 280px;
+.cards-img-part .square3 {
+    /* display: flex; */
+    top: 150px;
     left: 140px;
     background-color: #559292;
-    width: 10%;
-    height: 50%;
-    z-index: 0;
+    width: 30%;
+    height: 60%;
 }
 
 /* ------------------------  card 4 end ------------------------------- */
@@ -329,39 +250,31 @@ body {
 
 .card5 {
     padding-top: 120px;
-    background-color: #ffffff;
-    display: flex;
-    position: relative;
-    height: 650px;
+    justify-content: flex-end;
 }
 
-.card5 .card5-right-part {
+.card5 .cards-img-part {
     width: 40%;
+    right: 0%;
     background-color: #fabeaa;
 }
 
-.card5 .card5-left-part {
-    width: 60%;
-    background-color: white;
-    align-items: center;
-    justify-content: center;
+.card5 .cards-desc-part {
+    /* display: flex; */
+    /* justify-content: flex-end; */
     margin: 170px 0px 0px 400px;
-    padding-right: 350px;
 }
 
-.card5-left-part button {
-    color: white;
-    background-color: #eab168;
-    text-transform: uppercase;
-    border: none;
-    width: 160px;
-    height: 40px;
-    margin-top: 20px;
-}
+/* .card5.cards-desc-part.orange-button{
+    position: relative;
+    left:60%;
+    right:60%;
+    width:-500px;
+} */
 
-.card5-right-part .note {
+.cards-img-part .note {
     position: absolute;
-    top: 60px;
+    top: -100px;
     right: 120px;
     border: 8px solid white;
     width: 420px;
@@ -369,41 +282,13 @@ body {
     z-index: 1;
 }
 
-.card5-left-part .title {
-    position: absolute;
-    top: 140px;
-    right: 450px;
-    /* left: 420px; */
-    background-color: #f7b198;
-    width: 58%;
-    height: 18%;
-    z-index: 2;
-}
-
-.card5-left-part .title p {
-    padding-top: 15px;
-    text-transform: uppercase;
-    padding-left: 140px;
-    color: #4e3f34;
-}
-
-.card5-left-part .title h2 {
-    position: relative;
-    color: white;
-    top: -10%;
-    padding-left: 140px;
-    font-style: oblique;
-    font-size: xx-large;
-}
-
-.card5-right-part .square4 {
-    position: absolute;
-    top: 280px;
+.cards-img-part .square4 {
+    display: flex;
+    top: 110px;
     right: 100px;
     background-color: #559292;
-    width: 10%;
-    height: 50%;
-    z-index: 0;
+    width: 20%;
+    height: 70%;
 }
 
 /* ------------------------  card 5 end ------------------------------- */
@@ -427,32 +312,22 @@ body {
     font-size: xx-large;
 }
 
+input[type=email],
 input[type=text] {
     text-transform: uppercase;
     padding: 20px;
     color: grey;
     border: none;
     margin: 0px 0px 15px 60px;
-
 }
 
 input[type=email] {
-    text-transform: uppercase;
-    padding: 20px;
-    color: grey;
-    border: none;
     margin: 0px 15px;
 }
 
 .notify button {
-    color: white;
-    background-color: #eab168;
-    text-transform: uppercase;
-    border: none;
     width: 190px;
     height: 57px;
-    margin-top: 20px;
-
 }
 
 /* ------------------------- get the latest part end ------------------------- */
@@ -462,7 +337,6 @@ input[type=email] {
 .posts {
     position: relative;
     height: 550px;
-
 }
 
 .posts h1 {
@@ -473,7 +347,7 @@ input[type=email] {
     font-size: xx-large;
 }
 
-.posts .imagegallery {
+.posts>div {
     position: absolute;
     width: 70%;
     height: 50%;
@@ -482,173 +356,44 @@ input[type=email] {
     background-color: #f7b198;
 }
 
-.post1 {
+.post-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
-    /* background-color: #333; */
-    margin-left: 50px;
     top: -30%;
-}
-
-.post1 p {
-    position: absolute;
-    padding-top: 210px;
-    top: 150%;
-    width: 250px;
-    margin-left: 10px;
-    text-align: center;
-    color: white;
-    font-style: oblique;
-}
-
-.post1 button {
-    position: absolute;
-    width: 160px;
-    height: 40px;
-    color: white;
-    background-color: #559292;
-    border: none;
-    font-size: small;
-    margin-top: 280px;
-    margin-left: 50px;
-    text-transform: uppercase;
-    z-index: 5;
-}
-
-.post2 {
-    position: absolute;
+    width: 27%;
+    height: 130%;
     /* background-color: #333; */
+}
+
+.post-img[data-margin="50px"] {
+    margin-left: 50px;
+}
+
+.post-img[data-margin="390px"] {
     margin-left: 390px;
-    top: -30%;
 }
 
-.post2 p {
-    position: absolute;
-    padding-top: 210px;
-    top: 150%;
-    width: 250px;
-    margin-left: 10px;
-    text-align: center;
-    color: white;
-    font-style: oblique;
-}
-
-.post2 button {
-    position: absolute;
-    width: 160px;
-    height: 40px;
-    color: white;
-    background-color: #559292;
-    border: none;
-    font-size: small;
-    margin-top: 280px;
-    margin-left: 50px;
-    text-transform: uppercase;
-    z-index: 5;
-}
-
-.post3 {
-    position: absolute;
-    /* background-color: #333; */
+.post-img[data-margin="725px"] {
     margin-left: 725px;
-    top: -30%;
 }
 
-.post3 p {
-    position: absolute;
-    padding-top: 210px;
-    top: 150%;
+.post-img p {
+    /* position: absolute; */
     width: 250px;
+    top: -20px;
     margin-left: 10px;
+    margin-bottom: -10px;
     text-align: center;
     color: white;
     font-style: oblique;
 }
 
-.post3 button {
-    position: absolute;
-    width: 160px;
-    height: 40px;
-    color: white;
-    background-color: #559292;
-    border: none;
-    font-size: small;
-    margin-top: 280px;
-    margin-left: 50px;
-    text-transform: uppercase;
-    z-index: 5;
-}
-
-.post1 .girl,
-.post2 .table,
-.post3 .garden {
-    position: absolute;
-    /* display: block; */
+.post-img img {
+    margin-bottom: 20px;
     width: 280px;
     height: 210px;
 }
 
-
 /* ---------------------------- posts part end ------------------------------ */
-
-/* ----------------------------- footer start -------------------------------- */
-
-.footer{
-    position: relative;
-    background-color:  #ffeeea;
-    height: 400px;
-}
-
-.footer .icon{
-    /* width: 33.33%; */
-    position: absolute;
-    /* background-color: #951d1d; */
-    height:100%;
-}
-
-.footer .icon a{
-    position: relative;
-    top:45%;
-    margin-left:20px;
-    margin-right:10px;
-    padding: 10px;
-    font-size: 50px;
-    color: #559292;
-    box-sizing: border-box;
-}
-
-.footer .natalie-title{
-    position: absolute;
-    /* background-color: #de6b19; */
-    height:100%;
-    margin-left: 490px;
-    box-sizing: border-box;
-}
-
-.natalie-title h1{
-    font-size: 80px;
-    font-style: oblique;
-    color: #f7b198;
-    padding: 100px 0px 0px 100px;
-}
-
-.natalie-title h3{
-    /* color: #4e3f34; */
-    text-transform: uppercase;
-    font-size: 20px;
-    color: #4e3f34;
-    margin: -60px 0px 0px 25px;
-    padding: 10px 0px 0px 100px;
-}
-
-.footer .natalie-desc{
-    /* width: 33.33%; */
-    position: absolute;
-    /* background-color: #66c2ff; */
-    padding: 0px 55px;
-    margin: 160px 0px 0px 1015px;
-    box-sizing: border-box;
-    color: #4e3f34;
-
-}
-
-/* ----------------------------- footer end -------------------------------- */

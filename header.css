@@ -1,0 +1,121 @@
+/* TODO: make sticky header */
+
+.header {
+    background-color: #ffffff;
+    display: flex;
+    position: -webkit-sticky;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    z-index:10;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s; /* Add a transition for smoothness */
+}
+
+
+.header .left-part {
+    width: 25%;
+    text-align: center;
+}
+
+.natalie-title {
+    margin: 0;
+    margin-left: 20px;
+    font-size: 50px;
+    color: #f6b199;
+}
+
+.Natalie-desc {
+    margin: 0;
+    margin-left: 20px;
+    font-size: 15px;
+    color: #555;
+}
+
+.topnav {
+    overflow: hidden;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #fabeaa;
+}
+
+.topnav a {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+.topnav a i {
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.icons {
+    margin-top: 15px;
+    margin-left: 355px;
+    font-size: large;
+}
+
+.icons i {
+    color: #559292;
+}
+
+.topnav a:hover {
+    color: #559292;
+}
+
+.icons i:hover {
+    color: #555;
+}
+
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .natalie-title {
+        font-size: 40px;
+    }
+
+    .Natalie-desc {
+        font-size: 12px;
+    }
+
+    .topnav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .icons {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .natalie-title {
+        font-size: 30px;
+    }
+
+    .Natalie-desc {
+        font-size: 10px;
+    }
+
+    .topnav a {
+        font-size: medium;
+    }
+
+    .icons {
+        font-size: medium;
+    }
+}

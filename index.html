@@ -7,19 +7,22 @@
     <title>Blog Design</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="global-style.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
 
-    <div class="header">
-        <div class="header-left-part">
+    <header class="header" id="header">
+        <div class=".left-part">
             <h1 class="natalie-title"><i>Natalie</i></h1>
             <h3 class="Natalie-desc">LIFE - HOME - FOOD</h3>
         </div>
 
-        <div class="header-right-part">
+        <div class=".right-part">
             <div class="topnav">
                 <a href="#"> Home</a>
                 <a href="#"> About Me</a>
@@ -27,22 +30,22 @@
                 <a href="#"> Contact</a>
             </div>
             <div class="icons">
-                <a href="#"><i class="fab fa-facebook"></i></a>&nbsp;&nbsp;
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>&nbsp;&nbsp;
                 <a href="#"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;
-                <a href="#"><i class="fab fa-linkedin"></i></a>&nbsp;&nbsp;
-                <a href="#"><i class="fab fa-github"></i></a>&nbsp;&nbsp;
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>&nbsp;&nbsp;
+                <a href="#"><i class="fa-brands fa-github-alt"></i></a>&nbsp;&nbsp;
             </div>
         </div>
-    </div>
+    </header>
 
-    <div class="cards">
-        <div class="card1">
-            <div class="card1-left-part">
-                <img class="plant" src="Images/bloomscape-plant.jpg" width="400px" height="500px" alt="">
+    <div class="content">
+        <div class="cards card1 content">
+            <div class="cards-img-part">
+                <img class="plant" src="Images/bloomscape-plant.jpg"  alt="">
                 <img class="meditate" src="Images/meditating.jpg" width="400px" height="500px" alt="">
-                <div class="square1"></div>
+                <div class="shape square1"></div>
             </div>
-            <div class="card1-right-part">
+            <div class="cards-desc-part card1-right-part">
                 <h1>
                     Lorem ipsum dolor sit amet, <br /> adipiscing elit
                 </h1>
@@ -53,12 +56,12 @@
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <button>Subscribe</button>
+                <button class="green-button">Subscribe</button>
             </div>
         </div>
 
-        <div class="card2">
-            <div class="card2-left-part">
+        <div class="cards card2">
+            <div class="cards-desc-part card2-left-part">
                 <h1>
                     Lorem ipsum dolor sit amet, <br /> adipiscing elit
                 </h1>
@@ -69,16 +72,16 @@
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <button>Subscribe</button>
+                <button class="green-button">Subscribe</button>
 
             </div>
-            <div class="card2-right-part">
+            <div class="cards-img-part">
                 <img class="girlface" src="Images/GirlPic.jpg" width="400px" height="500px" alt="">
-                <div class="square2"></div>
+                <div class="shape square2"></div>
             </div>
         </div>
 
-        <div class="card3">
+        <div class="cards card3">
             <p class="title"> Let's Get Started</p>
             <h1>Daily Motivational Quote</h1>
             <div class="para">
@@ -92,14 +95,14 @@
             </div>
         </div>
 
-        <div class="card4">
-            <div class="card4-left-part">
+        <div class="cards card4">
+            <div class="cards-img-part card4-left-part">
                 <img class="coffee" src="Images/Coffee.jpg" alt="">
-                <div class="square3"></div>
+                <div class="shape square3"></div>
             </div>
-            <div class="card4-right-part">
-                <div class="title">
-                    <p> month,day,year</p>
+            <div class="cards-desc-part">
+                <div class="title-part" data-position="left">
+                    <p> month, day, year</p>
                     <h2>Lorem ipsum dolor sit amet </h2>
                 </div>
                 <p>
@@ -109,29 +112,29 @@
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <button>Read more</button>
+                <button class="orange-button">Read more</button>
 
             </div>
         </div>
 
-        <div class="card5">
-            <div class="card5-left-part">
-                <div class="title">
-                    <p> month,day,year</p>
+        <div class="cards card5">
+            <div class="cards-desc-part">
+                <div class="title-part" data-position="right">
+                    <p> month, day, year</p>
                     <h2>Lorem ipsum dolor sit amet </h2>
                 </div>
-                <p>
+                <p data-position="left">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <button>Read more</button>
+                <button class="orange-button">Read more</button>
             </div>
-            <div class="card5-right-part">
+            <div class="cards-img-part">
                 <img class="note" src="Images/notes.jpg" alt="">
-                <div class="square4"></div>
+                <div class="shape square4"></div>
             </div>
         </div>
 
@@ -139,28 +142,28 @@
             <h2>get the latest</h2>
             <input type="text" placeholder="fullname">
             <input type="email" placeholder="Email address">
-            <button>subscribe</button>
+            <button  class="orange-button">subscribe</button>
         </div>
 
         <div class="posts">
             <h1>Popular posts</h1>
-            <div class="imagegallery">
-                <div class="post1">
-                    <img class="girl" src="Images/girl2.jpg" alt="">
+            <div>
+                <div class="post-img" data-margin="50px">
+                    <img src="Images/girl2.jpg" alt="">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <button>subscribe</button>
+                    <button class="green-button">subscribe</button>
                 </div>
 
-                <div class="post2">
-                    <img class="table" src="Images/table.jpg" alt="">
+                <div class="post-img" data-margin="390px">
+                    <img src="Images/table.jpg" alt="">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <button>subscribe</button>
+                    <button class="green-button">subscribe</button>
                 </div>
 
-                <div class="post3">
-                    <img class="garden" src="Images/garden.jpg" alt="">
+                <div class="post-img" data-margin="725px">
+                    <img src="Images/garden.jpg" alt="">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <button>subscribe</button>
+                    <button class="green-button">subscribe</button>
                 </div>
             </div>
         </div>
@@ -183,6 +186,26 @@
             </div>
         </div>
     </div>
+
+
+    <script>
+        window.onscroll = function() { myFunction() };
+    
+        var header = document.getElementById("header");
+        var sticky = header.offsetTop;
+    
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+                header.style.top = "0"; // Ensure header sticks to the top when position is fixed
+
+            } else {
+                header.classList.remove("sticky");
+                header.style.top = "auto"; // Reset the top style when header is not sticky
+            }
+        }
+    </script>
+    
 </body>
 
 </html>
