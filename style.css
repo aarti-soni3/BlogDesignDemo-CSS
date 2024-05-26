@@ -1,6 +1,6 @@
-.sticky + .content {
-    padding-top: 102px;
-  }
+.sticky+.content {
+    padding-top: 101px;
+}
 
 .cards {
     display: flex;
@@ -141,11 +141,6 @@ button {
 
 }
 
-.cards-desc-part h1 {
-    font-size: xx-large;
-    color: #559292;
-}
-
 .cards-img-part .girlface {
     display: flex;
     position: relative;
@@ -182,14 +177,14 @@ button {
     /* word-wrap: break-word; */
 }
 
-.card3 .para {
+.para p {
     margin-top: 30px;
     margin-left: 300px;
     width: 60%;
     text-align: center;
 }
 
-.card3 h1 {
+.card3 h2 {
     font-style: oblique;
 }
 
@@ -264,13 +259,6 @@ button {
     /* justify-content: flex-end; */
     margin: 170px 0px 0px 400px;
 }
-
-/* .card5.cards-desc-part.orange-button{
-    position: relative;
-    left:60%;
-    right:60%;
-    width:-500px;
-} */
 
 .cards-img-part .note {
     position: absolute;
@@ -397,3 +385,289 @@ input[type=email] {
 }
 
 /* ---------------------------- posts part end ------------------------------ */
+
+/* Media queries for responsive design */
+
+/* Extra Small Devices (Phones) */
+@media only screen and (max-width: 600px) {
+    .cards {
+        height: 340px;
+    }
+
+    .cards-desc-part h1 {
+        margin-top: -30px;
+        font-size: x-large;
+    }
+
+    button {
+        width: 120px;
+        height: 30px;
+        font-size: small;
+        margin: 0px;
+    }
+
+    .title-part {
+        top: 90px;
+        width: 55%;
+        height: 14%;
+    }
+
+    .title-part[data-position="left"] {
+        left: 250px;
+    }
+
+    .title-part[data-position="right"] {
+        top: 5%;
+        height: 20%;
+        right: 250px;
+    }
+
+    .cards-desc-part>p {
+        width: 14rem;
+        font-size: small;
+    }
+
+    .cards-desc-part>p[data-position="left"] {
+        left: 50px;
+        top: -10%;
+    }
+
+    .cards-desc-part>p[data-position="right"] {
+        top: 20%;
+        right: -100px;
+    }
+
+    button.btn-left {
+        position: relative;
+        margin-left: 50px;  
+        top: -25px;
+    }
+    
+    button.btn-right {
+        position: relative;
+        top: 20%;
+        margin-left: 100px;  
+    }
+
+    .title-part p {
+        padding-top: 8px;
+        padding-left: 70px;
+        font-size: small;
+    }
+
+    .title-part h2 {
+        position: relative;
+        padding-left: 70px;
+        font-size: 1.3rem;
+    }
+
+    .card1 .cards-desc-part {
+        margin-top: 60px;
+    }
+
+    .cards-img-part .plant {
+        width: 55%;
+        object-fit: cover;
+    }
+
+    .cards-img-part .meditate {
+        width: 240px;
+        height: 320px;
+        top: 32%;
+        object-fit: cover;
+    }
+
+    .cards-img-part .square1 {
+        transform: translate(120%, -132%);
+        height: 60%;
+        width: 40%;
+        background-color: #559292;
+    }
+
+    .card2 {
+        height: 470px;
+    }
+
+    .card2 .cards-desc-part {
+        margin-left: 60px;
+        margin-top: 150px;
+    }
+
+    .cards-img-part .girlface {
+        transform: translate(30%, 60%);
+        width: 220px;
+        height: 280px;
+        object-fit: cover;
+    }
+
+    .cards-img-part .square2 {
+        width: 55%;
+        height: 55%;
+        transform: translate(60%, -66%);
+    }
+
+    .card3 {
+        height: 280px;
+        padding-top: 50px;
+    }
+
+    .para p {
+        margin-top: 10px;
+        margin-left: 65px;
+        width: 80%;
+        font-size: 0.95rem;
+    }
+
+    .card3 .title {
+        margin-top: -10px;
+        font-size: medium;
+    }
+
+    .card4 {
+        padding-top: 90px;
+        height: 470px;
+    }
+
+    .card4 .cards-img-part {
+        top: 10%;
+        width: 45%;
+        height: 70%;
+    }
+
+    .card4 .cards-desc-part {
+        margin: 0px;
+        padding-right: 350px;
+    }
+
+    .cards-img-part .coffee {
+        top: -100px;
+        left: 55px;
+        width: 270px;
+        height: 330px;
+    }
+
+    .cards-img-part .square3 {
+        top: 85px;
+        left: 45px;
+        width: 40%;
+        height: 60%;
+    }
+
+    .card5 .cards-img-part {
+        width: 35%;
+        right: 0%;
+    }
+
+    .card5 .cards-desc-part {
+        margin: 0px;
+        width:65%;
+    }
+
+    .cards-img-part .note {
+        top: -60%;
+        right: 30%;
+        width: 250px;
+        height: 300px;
+    }
+
+    .cards-img-part .square4 {
+        top: 40px;
+        right: 50px;
+        width: 35%;
+        height: 70%;
+    }
+
+    
+.notify {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 40px 30px;
+    padding: 20px 20px;
+}
+
+.notify h2 {
+    font-size: medium;
+}
+
+input[type=email],
+input[type=text] {
+    width: 50%;
+    padding: 5px;
+    margin: 0px 10px;
+}
+
+.notify button {
+    width: 150px;
+    height: 26px;
+}
+
+.posts {
+    position: relative;
+    height: 1020px;
+}
+
+.posts h1 {
+    margin-top: 0px;
+}
+
+.posts>div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items:center;
+    width: 70%;
+    height: 87%;
+    top: 8%;
+    left: 15%;
+}
+
+.post-img {
+    top: -10%;
+    width: 35%;
+    height: 30%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.post-img[data-margin="50px"] {
+    position: relative;
+    top:3%;
+    margin-left: 0px;
+}
+
+.post-img[data-margin="390px"] {
+    top:36%;
+    margin-left: 0px;
+}
+
+.post-img[data-margin="725px"] {
+    top:69%;
+    margin-left: 0px;
+}
+
+.post-img p {
+    width: 200px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.post-img img {
+    margin-bottom: 10px;
+    width: 220px;
+    height: 170px;
+}
+
+}
+
+/* Small Devices (Tablets) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {}
+
+/* Medium Devices (Small Laptops) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {}
+
+/* Large Devices (Laptops and Desktops) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+
+/* Extra Large Devices (Large Desktops) */
+@media only screen and (min-width: 1200px) {}

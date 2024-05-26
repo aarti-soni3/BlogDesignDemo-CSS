@@ -1,21 +1,20 @@
 .footer {
     position: relative;
+    display: flex;
+    justify-content: space-between;
     background-color: #ffeeea;
     height: 400px;
 }
 
 .footer .icon {
-    /* width: 33.33%; */
     position: absolute;
-    /* background-color: #951d1d; */
     height: 100%;
 }
 
 .footer .icon a {
     position: relative;
     top: 45%;
-    margin-left: 20px;
-    margin-right: 10px;
+    margin: 0px 0px 20px 10px;
     padding: 10px;
     font-size: 50px;
     color: #559292;
@@ -24,7 +23,6 @@
 
 .footer .natalie-title {
     position: absolute;
-    /* background-color: #de6b19; */
     height: 100%;
     margin-left: 490px;
     box-sizing: border-box;
@@ -38,7 +36,6 @@
 }
 
 .natalie-title h3 {
-    /* color: #4e3f34; */
     text-transform: uppercase;
     font-size: 20px;
     color: #4e3f34;
@@ -47,11 +44,78 @@
 }
 
 .footer .natalie-desc {
-    /* width: 33.33%; */
     position: absolute;
-    /* background-color: #66c2ff; */
     padding: 0px 55px;
     margin: 160px 0px 0px 1015px;
     box-sizing: border-box;
     color: #4e3f34;
+}
+
+/* Media queries for responsive design */
+
+/* Extra Small Devices (Phones) */
+@media only screen and (max-width: 600px) {
+    .footer {
+        height: 260px;
+    }
+    
+    .footer .icon {
+        /* width: 33.33%; */
+        height: 100%;
+        padding-left: 10px;
+    }
+    
+    .footer .icon a {
+        top: 45%;
+        margin: 1px;
+        padding :0px;
+        font-size: 25px;
+    }
+    
+    .footer .natalie-title {
+        width: 20%;
+        margin-left: 480px;
+    }
+    
+    .natalie-title h1 {
+        font-size: 70px;
+        left:50px;
+        margin-left:-300px ;
+        padding: 30px 0px 0px 0px;
+    }
+    
+    .natalie-title h3 {
+        font-size: 15px;
+        margin-left:-270px ;
+        padding: 10px 0px 0px 0px;
+
+    }
+    
+    .footer .natalie-desc {
+        width:40%;
+        right:0%;
+        top:-50%;
+        font-size: 0.9rem;
+        color: #4e3f34;
+    }
+}
+
+/* Small Devices (Tablets) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  
+}
+
+/* Medium Devices (Small Laptops) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+}
+
+/* Large Devices (Laptops and Desktops) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media only screen and (min-width: 1200px) {
+    
 }

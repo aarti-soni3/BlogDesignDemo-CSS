@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Blog Design</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="global-style.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
@@ -23,12 +23,17 @@
         </div>
 
         <div class=".right-part">
-            <div class="topnav">
+            <div class="hamburger">
+                <a href="javascript:void(0);" class="icon" onclick="UpdateMenu()">
+                    <i class="fa fa-bars"></i>
+            </div>
+            <div class="topnav" id="topnav">
                 <a href="#"> Home</a>
                 <a href="#"> About Me</a>
                 <a href="#"> Shop My Insta</a>
                 <a href="#"> Contact</a>
             </div>
+            </a>
             <div class="icons">
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>&nbsp;&nbsp;
                 <a href="#"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;
@@ -41,27 +46,26 @@
     <div class="content">
         <div class="cards card1 content">
             <div class="cards-img-part">
-                <img class="plant" src="Images/bloomscape-plant.jpg"  alt="">
+                <img class="plant" src="Images/bloomscape-plant.jpg" alt="">
                 <img class="meditate" src="Images/meditating.jpg" width="400px" height="500px" alt="">
                 <div class="shape square1"></div>
             </div>
-            <div class="cards-desc-part card1-right-part">
+            <div class="cards-desc-part">
                 <h1>
                     Lorem ipsum dolor sit amet, <br /> adipiscing elit
                 </h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    cillum dolore eu nulla pariatur. sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
                 <button class="green-button">Subscribe</button>
             </div>
         </div>
 
         <div class="cards card2">
-            <div class="cards-desc-part card2-left-part">
+            <div class="cards-desc-part">
                 <h1>
                     Lorem ipsum dolor sit amet, <br /> adipiscing elit
                 </h1>
@@ -83,7 +87,7 @@
 
         <div class="cards card3">
             <p class="title"> Let's Get Started</p>
-            <h1>Daily Motivational Quote</h1>
+            <h2>Daily Motivational Quote</h2>
             <div class="para">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -96,7 +100,7 @@
         </div>
 
         <div class="cards card4">
-            <div class="cards-img-part card4-left-part">
+            <div class="cards-img-part">
                 <img class="coffee" src="Images/Coffee.jpg" alt="">
                 <div class="shape square3"></div>
             </div>
@@ -105,15 +109,14 @@
                     <p> month, day, year</p>
                     <h2>Lorem ipsum dolor sit amet </h2>
                 </div>
-                <p>
+                <p data-position="right">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <button class="orange-button">Read more</button>
-
+                <button class="orange-button btn-right">Read more</button>
             </div>
         </div>
 
@@ -130,7 +133,7 @@
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <button class="orange-button">Read more</button>
+                <button class="orange-button btn-left">Read more</button>
             </div>
             <div class="cards-img-part">
                 <img class="note" src="Images/notes.jpg" alt="">
@@ -142,7 +145,7 @@
             <h2>get the latest</h2>
             <input type="text" placeholder="fullname">
             <input type="email" placeholder="Email address">
-            <button  class="orange-button">subscribe</button>
+            <button class="orange-button">subscribe</button>
         </div>
 
         <div class="posts">
@@ -185,16 +188,15 @@
                     aliquip ex ea commodo consequat.</p>
             </div>
         </div>
+
     </div>
-
-
     <script>
-        window.onscroll = function() { myFunction() };
-    
+        window.onscroll = function () { UpdateScrollBar() };
+
         var header = document.getElementById("header");
         var sticky = header.offsetTop;
-    
-        function myFunction() {
+
+        function UpdateScrollBar() {
             if (window.pageYOffset > sticky) {
                 header.classList.add("sticky");
                 header.style.top = "0"; // Ensure header sticks to the top when position is fixed
@@ -204,8 +206,18 @@
                 header.style.top = "auto"; // Reset the top style when header is not sticky
             }
         }
+
+        function UpdateMenu() {
+            var x = document.getElementById("topnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
     </script>
-    
+
 </body>
 
 </html>

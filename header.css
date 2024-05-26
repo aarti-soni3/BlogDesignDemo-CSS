@@ -7,14 +7,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 12px;
-    z-index:10;
+    z-index: 10;
 }
 
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-    transition: top 0.3s; /* Add a transition for smoothness */
 }
 
 
@@ -38,9 +37,16 @@
 }
 
 .topnav {
+    float: left;
+    display: block;
     overflow: hidden;
     padding-bottom: 15px;
     border-bottom: 2px solid #fabeaa;
+}
+
+.hamburger{
+    display: none;
+    float: none;
 }
 
 .topnav a {
@@ -50,22 +56,24 @@
     margin: 0 10px;
     font-weight: bold;
     font-size: large;
+    /* float :left;
+        display: block; */
 }
-
 
 .topnav a i {
     margin-left: 15px;
     font-size: 20px;
 }
 
-.icons {
-    margin-top: 15px;
+div.icons {
+    margin-top:45px;
     margin-left: 355px;
     font-size: large;
 }
 
-.icons i {
+div.icons i {
     color: #559292;
+    padding-right: 10px;
 }
 
 .topnav a:hover {
@@ -78,44 +86,63 @@
 
 
 /* Media queries for responsive design */
-@media (max-width: 768px) {
+
+/* Extra Small Devices (Phones) */
+@media only screen and  (min-width: 0px) and (max-width: 600px) {
     .header {
-        flex-direction: column;
-        align-items: flex-start;
+        /* background-color: #ffffff; */
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px;
+        z-index: 10;
     }
 
-    .natalie-title {
-        font-size: 40px;
+    .header .left-part {
+        text-align: center;
     }
 
-    .Natalie-desc {
-        font-size: 12px;
-    }
-
-    .topnav a {
+    .topnav.responsive {
+        /* position: absolute; */
+        float :left;
+        width: 100%;
         display: block;
-        margin: 5px 0;
+        border-bottom: 0px;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+        float: none;
     }
 
     .icons {
-        margin-left: 0;
+        display: none;
     }
 }
 
-@media (max-width: 480px) {
-    .natalie-title {
-        font-size: 30px;
-    }
+/* Small Devices (Tablets) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {}
 
-    .Natalie-desc {
-        font-size: 10px;
-    }
+/* Medium Devices (Small Laptops) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {}
 
-    .topnav a {
-        font-size: medium;
-    }
+/* Large Devices (Laptops and Desktops) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}
 
-    .icons {
-        font-size: medium;
-    }
-}
+/* Extra Large Devices (Large Desktops) */
+@media only screen and (min-width: 1200px) {}
